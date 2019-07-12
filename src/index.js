@@ -5,7 +5,8 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import Player from "./components/player";
 
-ReactDOM.render(<Player />, document.getElementById("root"));
+ReactDOM.render(<Player />, document.getElementById("player1"));
+ReactDOM.render(<Player />, document.getElementById("player2"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
