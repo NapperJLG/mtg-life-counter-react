@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Player extends Component {
   state = {
     lifeTotal: 20,
-    playerName: "Jeff"
+    playerName: ""
   };
 
   increaseLifeTotal = () => {
@@ -14,11 +14,22 @@ class Player extends Component {
     this.setState({ lifeTotal: this.state.lifeTotal - 1 });
   };
 
+  handlePlayerNameChange = event => {
+    this.setState({
+      playerName: event.target.value
+    });
+  };
+
   render() {
     return (
       <div>
         <div>
-          <h1>{this.state.playerName}</h1>
+          <label>Name:</label>
+          <input
+            type="text"
+            value={this.state.playerName}
+            onChange={this.handlePlayerNameChange}
+          />
           <h1>{this.state.lifeTotal}</h1>
         </div>
         <button onClick={this.increaseLifeTotal}>+</button>
