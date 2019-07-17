@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 class Player extends Component {
   state = {
-    lifeTotal: 20
+    lifeTotal: 20,
+    playerName: "Jeff"
   };
 
   increaseLifeTotal = () => {
@@ -17,6 +18,7 @@ class Player extends Component {
     return (
       <div>
         <div>
+          <h1>{this.state.playerName}</h1>
           <h1>{this.state.lifeTotal}</h1>
         </div>
         <button onClick={this.increaseLifeTotal}>+</button>
