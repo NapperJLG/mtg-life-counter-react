@@ -1,13 +1,21 @@
 # MTG Life Counter
 
-## Available Scripts
+## A life counter for the card game Magic:The Gathering built with React
 
-In the project directory, you can run:
+![mtg life counter screenshot](https://user-images.githubusercontent.com/19416471/62164421-4af81180-b314-11e9-8e20-8d1badcf8a99.JPG)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Type the name of each player into the forms
+- Use the + and - buttons to increase and decrease the life totals of each player
+- Press the 'Reset' button to return both life totals back to 20
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## To run the app:
+
+```bash
+> git clone git@github.com:NapperJLG/mtg-life-counter-react.git
+> cd mtg-life-counter-react
+> npm install
+> npm start
+```
+Navigate to [localhost:3000](http://localhost:3000/) on your web browser.
