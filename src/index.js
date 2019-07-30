@@ -3,10 +3,9 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import Player from "./components/player";
+import Application from "./components/application";
 
-ReactDOM.render(<Player />, document.getElementById("player1"));
-ReactDOM.render(<Player />, document.getElementById("player2"));
+ReactDOM.render(<Application />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
