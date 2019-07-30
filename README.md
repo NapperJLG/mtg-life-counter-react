@@ -1,4 +1,4 @@
-#MTG Life Counter
+# MTG Life Counter
 
 ## Available Scripts
 
