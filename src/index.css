@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +9,48 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/23/458370-Magic_The_Gathering-Trading_Card_Games.jpg);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.player-card {
+  border: 1px solid black;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  background-color: white;
+}
+
+.player-name {
+  margin-top: 10px;
+}
+
+.name-label {
+  font-weight: bold;
+}
+
+.life-total {
+  font-size: 100px;
+}
+
+#reset-button-container {
+  text-align: center;
+}
+
+.btn {
+  margin: 2px;
+  margin-top: 30px;
+  width: 50px;
 }

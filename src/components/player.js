@@ -26,18 +26,30 @@ class Player extends Component {
   render() {
     return (
       <div>
-        <div>
-          <label>Name:</label>
-          <input
-            type="text"
-            value={this.state.playerName}
-            onChange={this.handlePlayerNameChange}
-          />
-        </div>
-        <div>
-          <h1>{this.state.lifeTotal}</h1>
-          <button onClick={this.increaseLifeTotal}>+</button>
-          <button onClick={this.decreaseLifeTotal}>-</button>
+        <div className="player-card">
+          <div className="player-name">
+            <span className="name-label">Name: </span>
+            <input
+              type="text"
+              value={this.state.playerName}
+              onChange={this.handlePlayerNameChange}
+            />
+          </div>
+          <div>
+            <h1 className="life-total">{this.state.lifeTotal}</h1>
+            <button
+              className="btn btn-success btn-lg m-2"
+              onClick={this.increaseLifeTotal}
+            >
+              +
+            </button>
+            <button
+              className="btn btn-danger btn-lg m-2"
+              onClick={this.decreaseLifeTotal}
+            >
+              -
+            </button>
+          </div>
         </div>
       </div>
     );

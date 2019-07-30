@@ -17,9 +17,15 @@ class Application extends Component {
   render() {
     return (
       <div>
-        <Player ref={this.player1} />
-        <Player ref={this.player2} />
-        <button onClick={this.handleReset}>Reset</button>
+        <div className="container">
+          <Player ref={this.player1} />
+          <Player ref={this.player2} />
+        </div>
+        <div id="reset-button-container">
+          <button id="reset-button" onClick={this.handleReset}>
+            Reset
+          </button>
+        </div>
       </div>
     );
   }
