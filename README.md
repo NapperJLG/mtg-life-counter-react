@@ -1,6 +1,6 @@
 # MTG Life Counter
 
-## A life counter for the card game Magic:The Gathering built with React
+## A life counter for the card game Magic:The Gathering built with React - https://mtg-life-counter-react.herokuapp.com/
 
 ![mtg life counter screenshot](https://user-images.githubusercontent.com/19416471/62164421-4af81180-b314-11e9-8e20-8d1badcf8a99.JPG)
 
